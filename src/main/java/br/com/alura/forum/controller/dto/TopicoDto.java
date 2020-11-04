@@ -37,7 +37,7 @@ public class TopicoDto {
 //		return dataCriacao;
 //	}
 	public static List<TopicoDto> converter(List<Topico> listaTopico){
-		
+		//return listaTopico.stream().map(TopicoDto::new).collect(Collectors.toList());
 		int tamanhoLista = listaTopico.size();
 		List<TopicoDto> listaTopicoDto =  new ArrayList();
 		for (int i = 0; i<tamanhoLista;i++) {
